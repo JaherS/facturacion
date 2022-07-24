@@ -1,8 +1,5 @@
-package com.facturacion.modelcore.entities.ciudad;
+package com.facturacion.modelcore.entities.authRole;
 
-
-
-import com.facturacion.modelcore.entities.departamento.DepartamentoDAO;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
@@ -17,24 +14,23 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "Ciudad")
+@Table(name = "Auth_Rol")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-public class CiudadDAO {
+public class AuthRolDAO {
 
     public static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
-    @Column(name = "CIUDAD_ID")
-    private Long departamentoId;
+    @Column(name = "AUTHROL_ID")
+    private Long authRolId;
 
-    @Column(name = "CIUDAD_NOMBRE", nullable = false, length = 100, unique = true)
-    private Long departamentoNombre;
+    @Column(name = "AUTHUROL_NOMBRE", nullable = false, length = 100, unique = true)
+    private String authRolNombre;
 
-
-    @JoinColumn(name = "DEPA_ID", referencedColumnName = "DEPA_ID", nullable = false)
-    @ManyToOne(fetch = FetchType.LAZY)
-    private DepartamentoDAO departamento;
+    @Column(name = "AUTHROL_DESCRIPCION", nullable = false, length = 250, unique = true)
+    private String authRolDescripcion;
 }
+
