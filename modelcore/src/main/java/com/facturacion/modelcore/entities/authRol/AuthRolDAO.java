@@ -1,4 +1,4 @@
-package com.facturacion.modelcore.entities.authRole;
+package com.facturacion.modelcore.entities.authRol;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -27,7 +27,7 @@ public class AuthRolDAO {
     @Column(name = "AUTHROL_ID")
     private Long authRolId;
 
-    @Column(name = "AUTHUROL_NOMBRE", nullable = false, length = 100, unique = true)
+    @Column(name = "AUTHUROL_NOMBRE", nullable = false, length = 50, unique = true)
     private String authRolNombre;
 
     @Column(name = "AUTHROL_DESCRIPCION", nullable = false, length = 250, unique = true)

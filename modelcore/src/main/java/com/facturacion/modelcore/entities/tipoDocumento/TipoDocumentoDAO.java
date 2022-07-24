@@ -31,6 +31,6 @@ public class TipoDocumentoDAO {
     @Column(name = "TIPODOC_NOMBRE", nullable = false, length = 250, unique = true)
     private String tipoDocumentoNombre;
 
-    @Column(name = "TIPODOC_COD", nullable = false, length = 10, unique = true)
+    @Column(name = "TIPODOC_CODIGO", nullable = false, length = 10, unique = true)
     private String tipoDocumentoCodigo;
 }

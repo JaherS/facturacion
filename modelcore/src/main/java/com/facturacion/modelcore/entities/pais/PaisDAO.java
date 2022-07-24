@@ -33,7 +33,7 @@ public class PaisDAO {
     @Column(name = "PAIS_NOMBRE", nullable = false, length = 250, unique = true)
     private Long paisNombre;
 
-    @Column(name = "PAIS_NOMBRE", nullable = false, length = 10, unique = true)
+    @Column(name = "PAIS_CODIGO", nullable = false, length = 10, unique = true)
     private Long paisCodigo;
 
 }

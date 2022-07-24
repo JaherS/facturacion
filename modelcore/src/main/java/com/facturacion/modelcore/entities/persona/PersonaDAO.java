@@ -46,7 +46,7 @@ public class PersonaDAO {
     @Column(name = "PERSONA_CORREO", nullable = false, length = 250)
     private String personaCorreo;
 
-    @Column(name = "PERSONA_CORREO", nullable = false, length = 250)
+    @Column(name = "PERSONA_DIRECCION", nullable = false, length = 250)
     private String personaDireccion;
 
     @Temporal(TemporalType.DATE)
