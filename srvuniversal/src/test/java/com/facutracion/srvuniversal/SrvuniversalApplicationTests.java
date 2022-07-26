@@ -1,10 +1,10 @@
-package com.facturacion.srvpais;
+package com.facutracion.srvuniversal;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SrvpaisApplicationTests {
+class SrvuniversalApplicationTests {
 
 	@Test
 	void contextLoads() {
