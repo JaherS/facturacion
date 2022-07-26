@@ -28,10 +28,10 @@ public class CiudadDAO {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "CIUDAD_ID")
-    private Long departamentoId;
+    private Long ciudadId;
 
     @Column(name = "CIUDAD_NOMBRE", nullable = false, length = 100, unique = true)
-    private Long departamentoNombre;
+    private Long ciudadNombre;
 
 
     @JoinColumn(name = "DEPA_ID", referencedColumnName = "DEPA_ID", nullable = false)

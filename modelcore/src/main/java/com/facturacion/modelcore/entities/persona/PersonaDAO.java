@@ -51,7 +51,7 @@ public class PersonaDAO {
 
     @Temporal(TemporalType.DATE)
     @Column(name = "PERSONA_FECHANACIMIENTO", nullable=false)
-    private Date fechaPago;
+    private Date fechaNacimiento;
 
     @JoinColumn(name = "CIUDAD_ID", referencedColumnName = "CIUDAD_ID", nullable = false)
     @ManyToOne(fetch = FetchType.LAZY)

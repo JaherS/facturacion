@@ -1,6 +1,7 @@
 package com.facturacion.modelcore.entities.authUser;
 
 import com.facturacion.modelcore.entities.authRol.AuthRolDAO;
+import com.facturacion.modelcore.entities.persona.PersonaDAO;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
@@ -37,4 +38,8 @@ public class AuthUserDAO {
     @JoinColumn(name = "AUTHROL_ID", referencedColumnName = "AUTHROL_ID", nullable = false)
     @ManyToOne(fetch = FetchType.LAZY)
     private AuthRolDAO authRol;
+
+    @JoinColumn(name = "PERSONA_ID", referencedColumnName = "PERSONA_ID", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    private PersonaDAO persona;
 }
