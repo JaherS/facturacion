@@ -1,4 +1,4 @@
-package com.facutracion.srvuniversal;
+package com.facturacion.srvuniversal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

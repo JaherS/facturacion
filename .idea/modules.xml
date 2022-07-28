@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/facturacion.iml" filepath="$PROJECT_DIR$/.idea/facturacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modelcore/modelcore.iml" filepath="$PROJECT_DIR$/modelcore/modelcore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/srvuniversal/srvuniversal.iml" filepath="$PROJECT_DIR$/srvuniversal/srvuniversal.iml" />
     </modules>
   </component>
 </project>
