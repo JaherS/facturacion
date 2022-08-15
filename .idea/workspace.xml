@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a01239be-c26e-47c2-a0b5-14e5299024b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/dto/categoriaProducto/CategoriaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/dto/producto/ProductoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/categoriaProducto/CategoriaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/producto/ProductoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/authRol/AuthRolDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/authRol/AuthRolDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/authUser/AuthUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/authUser/AuthUserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/ciudad/CiudadDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/ciudad/CiudadDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/departamento/DepartamentoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/departamento/DepartamentoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/pais/PaisDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/pais/PaisDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/persona/PersonaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/persona/PersonaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/tipoDocumento/TipoDocumentoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/tipoDocumento/TipoDocumentoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelcore/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/commons/converter/UniversalConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/commons/converter/UniversalConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/service/AuthUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/service/AuthUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/service/IAuthUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/service/IAuthUserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -73,6 +64,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/XVI/Documents/github/facturacion",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "show.run.dashboard.notification": "false",
     "spring.configuration.checksum": "887c0e4d5cdc3e4f301cbc054253428c"
   }
@@ -119,7 +111,7 @@
       <workItem from="1659827307538" duration="1203000" />
       <workItem from="1659830127467" duration="153000" />
       <workItem from="1660048276950" duration="1246000" />
-      <workItem from="1660529222170" duration="2915000" />
+      <workItem from="1660529222170" duration="6547000" />
     </task>
     <servers />
   </component>

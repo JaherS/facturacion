@@ -9,13 +9,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class UniversalConverter {
 
-    public AuthUserDAO PaisDTOtoDAO(AuthUserDTO authUserDTO, ModelMapper modelMapper){
+    public AuthUserDAO AuthUserDTOtoDAO(AuthUserDTO authUserDTO, ModelMapper modelMapper){
         AuthUserDAO authUserDAO = new AuthUserDAO();
         modelMapper.map(authUserDTO, authUserDAO);
         return authUserDAO;
     }
 
-    public AuthUserDTO categoriaPagoDAOtoDTO(AuthUserDAO authUserDAO, ModelMapper modelMapper){
+    public AuthUserDTO AuthUserDAOtoDTO(AuthUserDAO authUserDAO, ModelMapper modelMapper){
         AuthUserDTO authUserDTO = new AuthUserDTO();
         modelMapper.map(authUserDAO, authUserDTO);
         return authUserDTO;
