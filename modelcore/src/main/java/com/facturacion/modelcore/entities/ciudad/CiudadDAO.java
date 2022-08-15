@@ -11,6 +11,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
@@ -20,7 +21,7 @@ import javax.persistence.*;
 @Table(name = "Ciudad")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-public class CiudadDAO {
+public class CiudadDAO implements Serializable {
 
     public static final long serialVersionUID = 1L;
 

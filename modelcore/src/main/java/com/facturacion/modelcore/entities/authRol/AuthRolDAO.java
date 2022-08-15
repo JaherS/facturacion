@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
@@ -17,7 +18,7 @@ import javax.persistence.*;
 @Table(name = "Auth_Rol")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-public class AuthRolDAO {
+public class AuthRolDAO implements Serializable {
 
     public static final long serialVersionUID = 1L;
 

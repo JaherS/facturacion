@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a01239be-c26e-47c2-a0b5-14e5299024b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/dto/categoriaProducto/CategoriaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/dto/producto/ProductoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/categoriaProducto/CategoriaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/producto/ProductoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/authRol/AuthRolDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/authRol/AuthRolDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/authUser/AuthUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/authUser/AuthUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/ciudad/CiudadDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/ciudad/CiudadDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/departamento/DepartamentoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/departamento/DepartamentoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/pais/PaisDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/pais/PaisDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/persona/PersonaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/persona/PersonaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/tipoDocumento/TipoDocumentoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/tipoDocumento/TipoDocumentoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelcore/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +46,7 @@
     <option name="myId2Visible">
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
@@ -60,11 +72,25 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/XVI/Documents/indep/Proyectos2",
+    "last_opened_file_path": "C:/Users/XVI/Documents/github/facturacion",
+    "show.run.dashboard.notification": "false",
     "spring.configuration.checksum": "887c0e4d5cdc3e4f301cbc054253428c"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ModelcoreApplication">
+    <configuration name="ModelcoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="modelcore" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.facturacion.modelcore.ModelcoreApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.facturacion.modelcore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SrvuniversalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="srvuniversal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.facturacion.srvuniversal.SrvuniversalApplication" />
@@ -72,6 +98,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ModelcoreApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -87,6 +118,8 @@
       <workItem from="1659818904618" duration="266000" />
       <workItem from="1659827307538" duration="1203000" />
       <workItem from="1659830127467" duration="153000" />
+      <workItem from="1660048276950" duration="1246000" />
+      <workItem from="1660529222170" duration="2915000" />
     </task>
     <servers />
   </component>
