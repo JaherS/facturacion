@@ -81,4 +81,6 @@ public class AuthUserService implements IAuthUserService {
             return GenericResponseDTO.builder().message("Error no se encontro ningun usuario").objectResponse(null).statusCode(HttpStatus.BAD_REQUEST.value()).build();
         }
     }
+
+
 }
