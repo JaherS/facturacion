@@ -32,7 +32,7 @@ public class CiudadDAO implements Serializable {
     private Long ciudadId;
 
     @Column(name = "CIUDAD_NOMBRE", nullable = false, length = 100, unique = true)
-    private Long ciudadNombre;
+    private String ciudadNombre;
 
 
     @JoinColumn(name = "DEPA_ID", referencedColumnName = "DEPA_ID", nullable = false)

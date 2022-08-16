@@ -26,13 +26,13 @@ public class DepartamentoDAO implements Serializable {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //ORIGINALMENTE DEBE IR GenerationType.IDENTITY PARA QUE LA BASE GENERE EL ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "DEPA_ID")
     private Long departamentoId;
 
     @Column(name = "DEPA_NOMBRE", nullable = false, length = 100, unique = true)
-    private Long departamentoNombre;
+    private String departamentoNombre;
 
 
     @JoinColumn(name = "PAIS_ID", referencedColumnName = "PAIS_ID", nullable = false)

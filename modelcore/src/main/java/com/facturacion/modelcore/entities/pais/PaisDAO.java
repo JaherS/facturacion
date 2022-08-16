@@ -32,9 +32,9 @@ public class PaisDAO implements Serializable {
     private Long paisId;
 
     @Column(name = "PAIS_NOMBRE", nullable = false, length = 250, unique = true)
-    private Long paisNombre;
+    private String paisNombre;
 
     @Column(name = "PAIS_CODIGO", nullable = false, length = 10, unique = true)
-    private Long paisCodigo;
+    private String paisCodigo;
 
 }

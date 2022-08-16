@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a01239be-c26e-47c2-a0b5-14e5299024b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/security/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/commons/converter/UniversalConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/commons/converter/UniversalConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/ciudad/CiudadDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/ciudad/CiudadDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/departamento/DepartamentoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/departamento/DepartamentoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/pais/PaisDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/java/com/facturacion/modelcore/entities/pais/PaisDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelcore/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modelcore/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srvuniversal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/SrvuniversalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/SrvuniversalApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/repository/IAuthUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/repository/IAuthUserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/service/AuthUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/service/AuthUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/service/IAuthUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/service/IAuthUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/web/api/rest/AuthUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/web/api/rest/AuthUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/web/api/rest/IAuthUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/web/api/rest/IAuthUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,17 +69,46 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/XVI/Documents/github/facturacion",
+    "last_opened_file_path": "C:/Users/XVI/Documents/Proyectos/probando",
+    "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "show.run.dashboard.notification": "false",
     "spring.configuration.checksum": "887c0e4d5cdc3e4f301cbc054253428c"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.ModelcoreApplication">
+  <component name="RunManager" selected="Spring Boot.SrvuniversalApplication">
+    <configuration name="All in modelcore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="modelcore" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in srvuniversal (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="srvuniversal" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in srvuniversal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="srvuniversal" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ModelcoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="modelcore" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.facturacion.modelcore.ModelcoreApplication" />
@@ -92,6 +131,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in srvuniversal (1)" />
+        <item itemvalue="JUnit.All in srvuniversal" />
+        <item itemvalue="JUnit.All in modelcore" />
         <item itemvalue="Spring Boot.ModelcoreApplication" />
       </list>
     </recent_temporary>
@@ -111,7 +153,8 @@
       <workItem from="1659827307538" duration="1203000" />
       <workItem from="1659830127467" duration="153000" />
       <workItem from="1660048276950" duration="1246000" />
-      <workItem from="1660529222170" duration="6547000" />
+      <workItem from="1660529222170" duration="7163000" />
+      <workItem from="1660590652368" duration="10663000" />
     </task>
     <servers />
   </component>
