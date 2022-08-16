@@ -7,7 +7,6 @@
     <list default="true" id="a01239be-c26e-47c2-a0b5-14e5299024b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/security/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/service/AuthUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/srvuniversal/src/main/java/com/facturacion/srvuniversal/service/AuthUserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,23 +55,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/XVI/Documents/Proyectos/probando&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;887c0e4d5cdc3e4f301cbc054253428c&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/XVI/Documents/github/facturacion",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "show.run.dashboard.notification": "false",
+    "spring.configuration.checksum": "887c0e4d5cdc3e4f301cbc054253428c"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Spring Boot.SrvuniversalApplication">
     <configuration name="All in modelcore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="modelcore" />
@@ -144,7 +143,8 @@
       <workItem from="1660048276950" duration="1246000" />
       <workItem from="1660529222170" duration="7163000" />
       <workItem from="1660590652368" duration="10663000" />
-      <workItem from="1660614040148" duration="2112000" />
+      <workItem from="1660614040148" duration="2192000" />
+      <workItem from="1660617287212" duration="2317000" />
     </task>
     <servers />
   </component>
