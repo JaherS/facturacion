@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.*;
 
 import javax.validation.constraints.NotNull;
+import java.util.Collection;
 
 @Getter
 @Setter
@@ -29,7 +30,7 @@ public class AuthUserDTO {
     private String authUserPassword;
 
     @NotNull(message = "Seleccione un ROL")
-    private AuthRolDAO authRol;
+    private Collection<AuthRolDAO> authRol;
 
     @NotNull(message = "Selecciona la persona")
     private PersonaDAO persona;

@@ -11,6 +11,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -26,11 +30,17 @@ public class AuthUserService implements IAuthUserService {
 
     private ObjectMapper mapper = new ObjectMapper();
 
+
+    private BCryptPasswordEncoder passwordEncoder;
+
+
+
     @Autowired
-    public AuthUserService(IAuthUserRepository iAuthUserRepository, ModelMapper modelMapper, UniversalConverter universalConverter) {
+    public AuthUserService(IAuthUserRepository iAuthUserRepository, ModelMapper modelMapper, UniversalConverter universalConverter, BCryptPasswordEncoder passwordEncoder) {
         this.iAuthUserRepository = iAuthUserRepository;
         this.modelMapper = modelMapper;
         this.universalConverter = universalConverter;
+        this.passwordEncoder = passwordEncoder;
     }
 
 
@@ -38,6 +48,7 @@ public class AuthUserService implements IAuthUserService {
     public GenericResponseDTO crearUsuario(AuthUserDTO authUserDTO) throws Exception {
         try{
             AuthUserDAO authUserDAO = universalConverter.AuthUserDTOtoDAO(authUserDTO, modelMapper);
+            authUserDAO.setAuthUserPassword(passwordEncoder.encode(authUserDAO.getAuthUserPassword()));
             logger.info(mapper.writeValueAsString(authUserDAO));
             iAuthUserRepository.save(authUserDAO);
             AuthUserDTO authUserRespuesta = universalConverter.AuthUserDAOtoDTO(authUserDAO, modelMapper);
@@ -54,6 +65,7 @@ public class AuthUserService implements IAuthUserService {
         try{
             if(authUserDTO.getAuthUserId() != null && iAuthUserRepository.existsById(authUserDTO.getAuthUserId())){
                 AuthUserDAO authUserDAO = universalConverter.AuthUserDTOtoDAO(authUserDTO, modelMapper);
+                authUserDAO.setAuthUserPassword(passwordEncoder.encode(authUserDAO.getAuthUserPassword()));
                 logger.info(mapper.writeValueAsString(authUserDAO));
                 iAuthUserRepository.save(authUserDAO);
                 AuthUserDTO authUserRespuesta = universalConverter.AuthUserDAOtoDTO(authUserDAO, modelMapper);
@@ -80,6 +92,46 @@ public class AuthUserService implements IAuthUserService {
             logger.error(e.getMessage());
             return GenericResponseDTO.builder().message("Error no se encontro ningun usuario").objectResponse(null).statusCode(HttpStatus.BAD_REQUEST.value()).build();
         }
+    }
+
+    @Override
+    public GenericResponseDTO consultarUsuarioNombre(String nombre) throws Exception{
+        try {
+            AuthUserDAO authUserDAO = iAuthUserRepository.findByUsername(nombre);
+            logger.info(mapper.writeValueAsString(authUserDAO));
+            AuthUserDTO authUserDTO = universalConverter.AuthUserDAOtoDTO(authUserDAO, modelMapper);
+            logger.info(mapper.writeValueAsString(authUserDTO));
+            return GenericResponseDTO.builder().message("Usuario listado").objectResponse(authUserDTO).statusCode(HttpStatus.OK.value()).build();
+        }catch(Exception e){
+            logger.error(e.getMessage());
+            return GenericResponseDTO.builder().message("Error no se encontro ningun usuario").objectResponse(null).statusCode(HttpStatus.BAD_REQUEST.value()).build();
+        }
+    }
+
+    @Override
+    public GenericResponseDTO consultarUsuarioCorreo(String correo) throws Exception{
+        try {
+            AuthUserDAO authUserDAO = iAuthUserRepository.findbyEmail(correo);
+            logger.info(mapper.writeValueAsString(authUserDAO));
+            AuthUserDTO authUserDTO = universalConverter.AuthUserDAOtoDTO(authUserDAO, modelMapper);
+            logger.info(mapper.writeValueAsString(authUserDTO));
+            return GenericResponseDTO.builder().message("Usuario listado").objectResponse(authUserDTO).statusCode(HttpStatus.OK.value()).build();
+        }catch(Exception e){
+            logger.error(e.getMessage());
+            return GenericResponseDTO.builder().message("Error no se encontro ningun usuario").objectResponse(null).statusCode(HttpStatus.BAD_REQUEST.value()).build();
+        }
+    }
+
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        AuthUserDAO authUserDAO = iAuthUserRepository.findbyEmail(username);
+        if(authUserDAO != null){
+            return new User(authUserDAO.getPersona().getPersonaCorreo(), authUserDAO.getAuthUserPassword(), authUserDAO.getAuthRol())
+        }else{
+            throw new UsernameNotFoundException("El usuario o contraseña no son validos");
+        }
+        return null;
     }
 
 

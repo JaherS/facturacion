@@ -79,14 +79,44 @@ public class AuthUserController implements IAuthUserController {
     }
 
     @Override
-    @PostMapping(path = "/consultarUsuarioId", produces = "application/json")
+    @PostMapping(path = "/consultarUsuarioId/{id}", produces = "application/json")
     @ApiOperation(value = "Listar Usuario", notes = "notas")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Se listo correctamente", response = GenericResponseDTO.class)
     })
-    public ResponseEntity<GenericResponseDTO> consultarUsuarioId(Long id) throws Exception{
+    public ResponseEntity<GenericResponseDTO> consultarUsuarioId(@PathVariable(value = "id", required = true) Long id) throws Exception{
 
         GenericResponseDTO genericResponseDTO = iAuthUserService.consultarUsuarioId(id);
+        return new ResponseEntity(
+                genericResponseDTO, HttpStatus.valueOf(genericResponseDTO.getStatusCode())
+        );
+
+    }
+
+    @Override
+    @PostMapping(path = "/consultarUsuarioNombre/{nombre}", produces = "application/json")
+    @ApiOperation(value = "Listar Usuario", notes = "notas")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Se listo correctamente", response = GenericResponseDTO.class)
+    })
+    public ResponseEntity<GenericResponseDTO> consultarUsuarioNombre(@PathVariable(value = "nombre", required = true) String nombre) throws Exception{
+
+        GenericResponseDTO genericResponseDTO = iAuthUserService.consultarUsuarioNombre(nombre);
+        return new ResponseEntity(
+                genericResponseDTO, HttpStatus.valueOf(genericResponseDTO.getStatusCode())
+        );
+
+    }
+
+    @Override
+    @PostMapping(path = "/consultarUsuarioCorreo/{correo}", produces = "application/json")
+    @ApiOperation(value = "Listar Usuario", notes = "notas")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Se listo correctamente", response = GenericResponseDTO.class)
+    })
+    public ResponseEntity<GenericResponseDTO> consultarUsuarioCorreo(@PathVariable(value = "correo", required = true) String correo) throws Exception{
+
+        GenericResponseDTO genericResponseDTO = iAuthUserService.consultarUsuarioCorreo(correo);
         return new ResponseEntity(
                 genericResponseDTO, HttpStatus.valueOf(genericResponseDTO.getStatusCode())
         );

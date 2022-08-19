@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Collection;
 
 @Data
 @NoArgsConstructor
@@ -37,8 +38,8 @@ public class AuthUserDAO implements Serializable {
     private String authUserPassword;
 
     @JoinColumn(name = "AUTHROL_ID", referencedColumnName = "AUTHROL_ID", nullable = false)
-    @ManyToOne(fetch = FetchType.LAZY)
-    private AuthRolDAO authRol;
+    @ManyToMany(fetch = FetchType.EAGER)
+    private Collection<AuthRolDAO> authRol;
 
     @JoinColumn(name = "PERSONA_ID", referencedColumnName = "PERSONA_ID", nullable = false)
     @ManyToOne(fetch = FetchType.LAZY)
